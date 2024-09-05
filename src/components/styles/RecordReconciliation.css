@@ -1,0 +1,69 @@
+/* Container styling */
+.record-reconciliation {
+    background-color: #f7f9fc;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    margin: 2rem auto;
+    max-width: 800px;
+}
+
+/* Header styling */
+.record-reconciliation h2 {
+    margin-bottom: 1.5rem;
+    color: #2c3e50;
+    text-align: center;
+}
+
+/* List styling */
+.reconciliation-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+/* Individual record styling */
+.reconciliation-item {
+    background-color: white;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    border-radius: 6px;
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: transform 0.2s ease-in-out;
+}
+
+.reconciliation-item:hover {
+    transform: scale(1.02);
+}
+
+/* Details sections */
+.record-details h3 {
+    margin: 0 0 0.5rem 0;
+    color: #2980b9;
+}
+
+.record-details p {
+    margin: 0;
+    color: #7f8c8d;
+    font-size: 0.9rem;
+}
+
+.appointment-details p {
+    margin: 0;
+    color: #2c3e50;
+    font-size: 0.9rem;
+}
+
+/* Responsive design */
+@media (max-width: 600px) {
+    .reconciliation-item {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .appointment-details {
+        margin-top: 1rem;
+    }
+}
